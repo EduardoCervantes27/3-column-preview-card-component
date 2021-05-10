@@ -1,0 +1,126 @@
+body {
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+@media(min-width: 768px){
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 0 auto;
+    }
+}
+
+.main-container {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    max-height: 90%;
+    margin-top: 50px;
+}
+
+.first-box {
+    background-color: #E28525;
+    border-radius: 10px 10px 0 0;
+    padding: 60px;
+    color: white;
+}
+@media(min-width: 768px){
+    .first-box{
+        border-radius: 10px 0 0 10px;
+    }
+}
+.second-box {
+    background-color: #016972;
+    padding: 60px;
+    color: white;
+}
+
+.third-box {
+    background-color: #00403F;
+    border-radius: 0 0 10px 10px;
+    padding: 60px;
+    color: white;
+}
+@media(min-width: 768px){
+    .third-box {
+        border-radius: 0 10px 10px 0;
+    }
+}
+
+.title {
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+.text {
+    line-height: 1.5;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+    width: 128px;
+    height: 48px;
+    margin-top: 70px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.button-orange {
+    color: #E28525;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 100ms all;
+}
+
+.button-smooth-green {
+    color: #016972;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 100ms all;
+}
+
+.button-green {
+    color: #00403F;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 100ms all;
+}
+
+.button-orange:hover {
+    background-color: #E28525;
+    color: white;
+    border: 2px solid white;
+}
+
+.button-smooth-green:hover {
+    background-color: #016972;
+    color: white;
+    border: 2px solid white;
+}
+
+.button-green:hover {
+    background-color: #00403F;
+    color: white;
+    border: 2px solid white;
+}
+
+.attribution {
+    display: none;
+}
+
+@media(min-width: 768px){
+    .attribution {
+        display: block;
+        text-align: center;
+    }
+}
